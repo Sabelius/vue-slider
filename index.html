@@ -22,18 +22,21 @@
         </div>
 
     </div>
-    <div class="container">
+    <div class="container" id="root">
         <div class="row">
-            <div class="col-12 d-flex justify-content-center pt-5" id="root">
+            <div class="col-12 d-flex justify-content-center">
                 <div class="left-slider align-self-center">
-                    <i class="fas fa-chevron-left pr-5"></i>
+                    <i class="fas fa-chevron-left pr-5" @click="leftSlider()"></i>
                 </div>
                 <div>
-                    <img :src = "images[0].source" class="image">
+                    <img :src = "images[imageIndex].source" :alt ="images[imageIndex].alt" class="image">
                 </div>
                 <div class="right-slider align-self-center">
-                    <i class="fas fa-chevron-right pl-5" ></i>
+                    <i class="fas fa-chevron-right pl-5" @click="rightSlider()"></i>
                 </div>
+            </div>
+            <div>
+                <i class="fas fa-circle" v-for="(image, index) in images"></i>
             </div>
         </div>
     </div>

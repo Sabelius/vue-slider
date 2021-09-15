@@ -1,7 +1,14 @@
 .image{
-    width: 500px;
+  width: 600px;
+  height: 500px;
 }
 
-.fas{
+.fa-chevron-left,
+.fa-chevron-right{
     font-size: 40px;
+}
+
+.fa-chevron-left:hover,
+.fa-chevron-right:hover{
+    color: rgba(0, 0, 0, 0.4);
 }
