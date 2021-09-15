@@ -15,9 +15,9 @@
 
 .fa-circle{
     font-size: 30px;
-    color: gray;
+    color: rgb(189, 184, 184);
 }
 
-.fa-circle:active{
+.fa-circle.active{
     color: red;
 }
