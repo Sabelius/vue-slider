@@ -49,7 +49,4 @@ let root = new Vue({
             }
         },
     },
-    
-
 });
-

@@ -35,8 +35,8 @@
                     <i class="fas fa-chevron-right pl-5" @click="rightSlider()"></i>
                 </div>
             </div>
-            <div>
-                <i class="fas fa-circle" v-for="(image, index) in images"></i>
+            <div class="col-12 text-center">
+                <i class="fas fa-circle p-2" :class ="(index == imageIndex) ? 'active' : ' ' " v-for="(image, index) in images"></i>
             </div>
         </div>
     </div>

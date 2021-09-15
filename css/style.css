@@ -12,3 +12,12 @@
 .fa-chevron-right:hover{
     color: rgba(0, 0, 0, 0.4);
 }
+
+.fa-circle{
+    font-size: 30px;
+    color: gray;
+}
+
+.fa-circle:active{
+    color: red;
+}
