@@ -48,5 +48,9 @@ let root = new Vue({
                 this.imageIndex = 0;
             }
         },
+
+        goToImage: function(indice){
+            this.imageIndex = indice;
+        }
     },
 });

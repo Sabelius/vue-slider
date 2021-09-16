@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="col-12 text-center">
-                <i class="fas fa-circle p-2" :class ="(index == imageIndex) ? 'active' : ' ' " v-for="(image, index) in images"></i>
+                <i class="fas fa-circle p-2" :class ="(index == imageIndex) ? 'active' : ' ' " v-for="(image, index) in images" @click="goToImage(index)"></i>
             </div>
         </div>
     </div>
